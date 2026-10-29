@@ -34,3 +34,31 @@ Searching for jobs can involve tracking multiple applications, keeping profile i
 - **SQLite:** Persistent data storage and relational data management.
 - **Layered architecture:** Separation of application entry point, services, repositories, and database operations.
 - **Testing:** Automated tests for input validation.
+## Architecture
+
+The application follows a layered architecture to separate user interaction, business logic, and data access.
+
+```text
+User
+  |
+  v
+CLI (main.py)
+  |
+  v
+Service Layer
+  |
+  v
+Repository Layer
+  |
+  v
+SQLite Database
+```
+
+### Data Flow
+
+1. The user interacts with the application through the command-line interface.
+2. The service layer handles application logic.
+3. The repository layer performs database operations.
+4. SQLite stores application data and maintains relational integrity.
+
+*Note: The web application version is planned for a future milestone.*
