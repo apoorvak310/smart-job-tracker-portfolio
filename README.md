@@ -11,3 +11,26 @@ Searching for jobs can involve tracking multiple applications, keeping profile i
 **Project type:** Command-Line Application (CLI)  
 **Status:** In Development  
 **Technologies:** Python, SQLite, SQL, Git
+## Features
+
+### Job Application Management
+- Add and manage job application records.
+- Track application statuses.
+- Search, filter, and sort application records.
+
+### User Profile Management
+- Create, view, update, and delete user profiles.
+- Associate skills with specific user profiles.
+- View the skills associated with a selected profile.
+
+### Data Integrity
+- Validate user inputs.
+- Prevent duplicate skills within the same profile.
+- Use SQLite foreign key relationships and cascading deletion to maintain data consistency.
+
+## Technical Highlights
+
+- **Python:** Application logic and business rules.
+- **SQLite:** Persistent data storage and relational data management.
+- **Layered architecture:** Separation of application entry point, services, repositories, and database operations.
+- **Testing:** Automated tests for input validation.
